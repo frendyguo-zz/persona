@@ -1,0 +1,437 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  max-width: 440px;
+  min-height: 100vh;
+  background-color: #fefefe;
+  border: 1px solid #dfdfdf;
+  padding-top: 16px;
+  padding-bottom: 36px;
+}
+
+.todayNews-title {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0 12px;
+  margin: 0;
+}
+
+.todayNews-stories {
+  margin-top: 10px;
+}
+
+.todayNews-storiesItem {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-color: #dfdfdf;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('https://asset.kompas.com/crops/Ik5Jhj48wTiwXdTCyWbvrey9C34=/0x0:0x0/740x500/data/photo/2020/02/25/5e54a8d51de88.jpg');
+}
+
+.todayNews-storiesItem::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, transparent 40%, rgba(0,0,0,0.25) 85%, #000);
+}
+
+.todayNews-storiesPagination {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.todayNews-storiesPaginationDot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 6px;
+  background-color: #dfdfdf;
+  border-radius: 50%;
+}
+
+.todayNews-storiesPaginationDot:first-child {
+  margin-left: 0;
+}
+
+.trendingNews {
+  margin-top: 36px;
+}
+
+.trendingNews-title {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0 12px;
+  margin: 0;
+}
+
+.trendingNews-stories {
+  margin-top: 10px;
+  padding: 0 12px;
+}
+
+.trendingNews-storiesItem {
+  margin-top: 16px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trendingNews-storiesItem:first-child {
+  margin-top: 0;
+}
+
+.trendingNews-storiesItemThumbnail {
+  height: 80px;
+  width: 80px;
+  border-radius: 4px;
+  border: 1px solid #dfdfdf;
+  margin-right: 12px;
+  margin-left: 12px;
+  background-color: #dfdfdf;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 0 0 auto;
+}
+
+.trendingNews-storiesItem:nth-child(1) .trendingNews-storiesItemThumbnail {
+  background-image: url('https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCn3-GrNRABGAEyCEuSH8QqARcs');
+}
+
+.trendingNews-storiesItem:nth-child(2) .trendingNews-storiesItemThumbnail {
+  background-image: url('https://cdn-images-1.medium.com/fit/c/152/156/1*L0UbDLtAuq7w2CfjqUH1xw.jpeg');
+}
+
+.trendingNews-storiesItem:nth-child(3) .trendingNews-storiesItemThumbnail {
+  background-image: url('https://cdn-images-1.medium.com/fit/c/152/156/1*T332SH8ukO30bCLKa7YT0w.png');
+}
+
+.trendingNews-storiesItemInfo {
+  padding-right: 12px;
+}
+
+.trendingNews-storiesItemInfoTitle {
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+
+  display: -webkit-box!important;
+  -webkit-line-clamp: 2!important;
+  overflow: hidden!important;
+  max-height: 40px;
+  text-overflow: ellipsis;
+}
+
+.trendingNews-storiesItemInfoExcerpt {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 4px 0 0;
+
+  display: -webkit-box!important;
+  -webkit-line-clamp: 3!important;
+  overflow: hidden!important;
+  max-height: 54px;
+  text-overflow: ellipsis;
+}
+
+.travelingNews {
+  margin-top: 36px;
+  padding: 24px 0;
+  background-color: #f3faff;
+}
+
+.travelingNews-header {
+  padding: 0 12px;
+}
+
+.travelingNews-headerTitle {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.travelingNews-headerShortDesc {
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.travelingNews-stories {
+  white-space: nowrap;
+  overflow-y: scroll;
+  margin-top: 16px;
+}
+
+.travelingNews-storiesItem {
+  display: inline-block;
+  width: 160px;
+  margin-left: 12px;
+  white-space: initial;
+}
+
+.travelingNews-storiesItem:last-child {
+  margin-right: 12px;
+}
+
+.travelingNews-storiesItemThumbnail {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-color: #dfdfdf;
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.travelingNews-storiesItem:nth-child(1) .travelingNews-storiesItemThumbnail {
+  background-image: url('https://mmc.tirto.id/image/otf/260x0/2018/08/05/traveler-perempuan--1--getty-images-istockphoto_ratio-16x9.jpg');
+}
+
+.travelingNews-storiesItem:nth-child(2) .travelingNews-storiesItemThumbnail {
+  background-image: url('https://mmc.tirto.id/image/otf/260x0/2017/01/27/IMG_0463_ratio-16x9.JPG');
+}
+
+.travelingNews-storiesItem:nth-child(3) .travelingNews-storiesItemThumbnail {
+  background-image: url('https://mmc.tirto.id/image/otf/260x0/2018/06/30/antarafoto-wisata-gunung-bromo-300618-zk-2_ratio-16x9.jpg');
+}
+
+.travelingNews-storiesItem:nth-child(4) .travelingNews-storiesItemThumbnail {
+  background-image: url('https://mmc.tirto.id/image/otf/260x0/2019/07/23/ilustrasi-belajar-sambil-piknik-istock--1_ratio-16x9.jpg');
+}
+
+.travelingNews-storiesItem:nth-child(5) .travelingNews-storiesItemThumbnail {
+  background-image: url('https://mmc.tirto.id/image/otf/260x0/2019/07/18/ilustrasi-penumpang-pesawat-istock--2_ratio-16x9.jpg');
+}
+
+.travelingNews-storiesItemTitle {
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 20px;
+  display: -webkit-box!important;
+  -webkit-line-clamp: 3!important;
+  overflow: hidden!important;
+  max-height: 60px;
+  font-weight: 600;
+}
+
+
+.healthNews {
+  margin-top: 36px;
+}
+
+.healthNews-header {
+  padding: 0 12px;
+}
+
+.healthNews-headerTitle {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.healthNews-stories {
+  margin-top: 12px;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+
+.healthNews-storiesItem {
+  display: inline-block;
+  white-space: initial;
+  width: 220px;
+  margin-left: 12px;
+}
+
+.healthNews-storiesItem:last-child {
+  margin-right: 12px;
+}
+
+.healthNews-storiesItemThumbnail {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-color: #dfdfdf;
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.healthNews-storiesItem:nth-child(1) .healthNews-storiesItemThumbnail {
+  background-image: url('https://www.harpersbazaar.co.id/lkgallery/teaser/lancome-collaboration-chiara-ferragni-1556810114_22_20190530223158HSJ9oi.jpg');
+}
+
+.healthNews-storiesItem:nth-child(2) .healthNews-storiesItemThumbnail {
+  background-image: url('https://cdn.fashionmagazine.com/wp-content/uploads/2020/02/MarionCotillard_Chanel_Holding-480x320-c-top.jpg');
+}
+
+.healthNews-storiesItem:nth-child(3) .healthNews-storiesItemThumbnail {
+  background-image: url('https://i.ytimg.com/vi/Xjc3vFvIfVo/maxresdefault.jpg');
+}
+
+.healthNews-storiesItem:nth-child(4) .healthNews-storiesItemThumbnail {
+  background-image: url('https://cdns.klimg.com/dream.co.id/resources/news/2019/06/12/109732/tips-tampil-kekinian-dengan-makeup-klasik-ala-seleb-hollywood-190612q.jpg');
+}
+
+.podcastSection {
+  margin-top: 36px;
+}
+
+.podcastSection-header {
+  padding: 0 12px;
+}
+
+.podcastSection-headerTitle {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+.podcastSection-episodes {
+  margin-top: 12px;
+}
+
+.podcastSection-episodesItem {
+  padding: 0 12px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.podcastSection-episodesItem:first-child {
+  margin-top: 0;
+}
+
+.podcastSection-episodesItemNum {
+  flex: 0 0 auto;
+  margin-right: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.podcastSection-episodesItemInfo {
+  width: 100%;
+}
+
+.podcastSection-episodesItemInfoPodcast {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  margin: 0;
+}
+
+.podcastSection-episodesItemInfoTitle {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 2px 0 0;
+  text-align: left;
+  width: 100%;
+}
+
+.podcastSection-episodesItemThumbnail {
+  flex: 0 0 auto;
+  margin-right: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.podcastSection-episodesItem:nth-child(1) .podcastSection-episodesItemThumbnail {
+  background-image: url('https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded400/3275383/3275383-1582083117025-c09ee47f1e5e5.jpg');
+}
+
+.podcastSection-episodesItem:nth-child(2) .podcastSection-episodesItemThumbnail {
+  background-image: url('https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best/v1567743613/logo-192_ra4tu7.png');
+}
+.podcastSection-episodesItem:nth-child(3) .podcastSection-episodesItemThumbnail {
+  background-image: url('https://www.asumsi.co/themes/asumsinew/assets/images/new-logo.png');
+}
+
+.podcastSection-episodesItem:nth-child(4) .podcastSection-episodesItemThumbnail {
+  background-image: url('https://i1.sndcdn.com/avatars-000202085751-6208b0-t200x200.jpg');
+}
+
+.canvasNews {
+  margin-top: 36px;
+}
+
+.canvasNews-header {
+  padding: 0 12px;
+}
+
+.canvasNews-headerTitle {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.canvasNews-stories {
+  margin-top: 12px;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+
+.canvasNews-storiesItem {
+  display: inline-block;
+  width: 250px;
+  margin-left: 12px;
+}
+
+.canvasNews-storiesItem:last-child {
+  margin-right: 12px;
+}
+
+.canvasNews-storiesItemThumbnail {
+  width: 100%;
+  padding-bottom: 166.666667%;
+  background-color: #dfdfdf;
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.canvasNews-storiesItem:nth-child(1) .canvasNews-storiesItemThumbnail {
+  background-image: url('https://img.kurio.network/cnWRnlJ3cdhoOtvAU2MQtoZ4c-w=/480x800/smart/filters:quality(85):format(jpeg)/https://kurio-img.kurioapps.com/20/02/23/aa179c9f-6076-433a-8221-5b8b8fff1379.jpeg');
+}
+
+.canvasNews-storiesItem:nth-child(2) .canvasNews-storiesItemThumbnail {
+  background-image: url('https://img.kurio.network/RwF99ZanYKnxG30KA8KWPUoLEqQ=/480x800/smart/filters:quality(85):format(jpeg)/https://kurio-img.kurioapps.com/20/02/24/4a6272c6-3a20-4d9f-a2d9-8124c4a2fda6.jpeg');
+}
+
+.canvasNews-storiesItem:nth-child(3) .canvasNews-storiesItemThumbnail {
+  background-image: url('https://img.kurio.network/EBGYgIpVxQddVY-jRSWijWXW8OQ=/480x800/smart/filters:quality(85):format(jpeg)/https://kurio-img.kurioapps.com/20/02/22/5d944dea-d33b-45b3-8f5b-efdd07592c10.png');
+}
+
+.canvasNews-storiesItem:nth-child(4) .canvasNews-storiesItemThumbnail {
+  background-image: url('https://img.kurio.network/1aU_dVq1CSJMIqblgkaN9WYeTaU=/480x800/smart/filters:quality(85):format(jpeg)/https://kurio-img.kurioapps.com/19/03/25/7a0fb02a-14d5-4933-99a1-ccbe1d319fec.jpg');
+}
+
+.canvasNews-storiesItem:nth-child(5) .canvasNews-storiesItemThumbnail {
+  background-image: url('https://img.kurio.network/4u_ymPF73xQzB04Ow4oawkaVU28=/480x800/smart/filters:quality(85):format(jpeg)/https://kurio-img.kurioapps.com/20/02/04/fda836a8-67a8-497b-b3c6-3b5a91ecdf95.jpeg');
+}
+
+@media screen and (min-width: 1025px) {
+  .app {
+    margin-left: 48px;
+  }
+}
